@@ -1,11 +1,61 @@
 :root {
-    --color-orange: #ff3400;
+    --color-blue-dark: #1b0760;
     --color-blue-light: #00d9ff;
     --color-blue-medium: #2584ff;
-    --color-blue-dark: #1b0760;
     --color-gray-text: #918ca4;
+    --color-orange: #ff3400;
     --color-white: #fff;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 /*Typography*/
 
+body {
+    color:var(--color-gray-text);
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 2.4;
+    line-height: 1.5;
+}
+
+h1, 
+h2,
+h3 {
+    color: var(--color-blue-dark);
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 7rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+p{
+    margin-top: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 1.8rem;
+    }
+    
+    h1 {
+        font-size: 8rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+    h3{
+        font-size: 2.4rem ;
+    }
+}
