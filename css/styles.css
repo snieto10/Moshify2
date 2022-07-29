@@ -5,6 +5,8 @@
     --color-gray-text: #918ca4;
     --color-orange: #ff3400;
     --color-white: #fff;
+    --color-border: #ccc;
+    --border-radios: 30px;
 }
 
 *, *::before, *::after {
@@ -245,8 +247,8 @@ a {
 /* Inputs */
 .input {
     padding: 1.5rem 3.5rem;
-    border: 1px solid #ccc;
-    border-radius: 30px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radios);
     outline: 0;
     color: var(--color-blue-dark);
     font-size: 2rem;
@@ -257,8 +259,25 @@ a {
     color: #cdcbd7;
 }
 
+.input-group {
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radios);
+    display: flex;
+}
+
+.input-group .input {
+    border: 0;
+    flex-grow: 1;
+    padding: 1.5rem 1rem;
+}
+
+.input-group .btn {
+    margin: 4px;
+}
+
 @media screen and (min-width: 1024px) {
     .input {
         font-size: 1.5rem;
     }
 }
+
