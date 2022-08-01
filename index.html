@@ -15,32 +15,18 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <section class="block block--skewed-left container">
-      <header class="block__header">
-        <h2 class="block__heading">Heading</h2>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem,
-          incidunt!
-        </p>
-      </header>
-      <div style="width: 30%; padding: 4rem">
-        <div class="card card--secondary">
-          <header class="card__header">Card Title</header>
-          <div class="card__body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
-            similique.
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="block block--dark block--skewed-right">
-      <div class="container">
-        <h2 class="block__heading">Heading</h2>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem,
-          incidunt!
-        </p>
-      </div>
-    </section>
+    <nav class="nav collapsible">
+      <a href="/"><img src="images/logo.png" alt="" /></a>
+      <svg class="icon icon--white nav__toggler">
+        <use xlink:href="images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="list nav__list collapsible__content">
+        <li class="list__item nav__item"><a href="#">Hosting</a></li>
+        <li class="list__item nav__item"><a href="#">VPS</a></li>
+        <li class="list__item nav__item"><a href="#">Domain</a></li>
+        <li class="list__item nav__item"><a href="#">Pricing</a></li>
+      </ul>
+    </nav>
   </body>
+  <script src="js/main.js"></script>
 </html>
